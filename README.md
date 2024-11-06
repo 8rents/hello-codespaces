@@ -14,7 +14,7 @@ We will use GitHub as a file system and vscode.dev as an IDE
     - Add a README
     - Add a license
     - Add a Node GitIgnore to the Repo
-2. In your browser open <https://vscode.dev>
+2. In your browser open: **<https://vscode.dev>**
     - Sign in with GitHub and/or Microsoft
     - Open the GitHub Repo you just made
     - Type any additional documentation into the README.md file
@@ -30,29 +30,45 @@ We will use GitHub as a file system and vscode.dev as an IDE
 5. A new window will open with a terminal
 6. Test that node is installed `node -v` prints out `v20.17.0`
 
-## Create a new node app
+## Create a new node app `package.json` file
 
-In the codespaces terminal initalize a new node app `package.json` file  by running `npm init` and adjusting any of the settings.
+The `package.json` file is the heart of any nodejs project. It contains all meta data about the project, any dependencies, version number, keywords, etc...
 
-> ### *A couple of notes about `package.json` file creation*
+In the codespaces terminal you can initalize a new `package.json` file by running `npm init` and adjusting any of the settings.
+
+> ### *A couple of notes about `package.json` file creation:*
 >
-> *You can auto create a `package.json` file using `npm init -y`, however this will not create all of the options in the json array.*
+> *You can select the default answer for each question by hitting `enter` as they come up.*
 >
-> *You can select the default by hitting enter for each question.* ***This is better than the `-y` flag because each of the array options will be created for you.*** *You won't have to look up each of the correct key values later.*
->
-> ---
->
-> Here's my entry for `npm init`:
->
-> - **name:** `hello-codespaces`
-> - **version:** `0.0.1`
-> - **description:** `An attempt at ephemeral computing by developing purely in the cloud using GitHub codespaces and vscode.dev to make a quick start node.js app`
-> - **entry point:** `app.js`
-> - **test command:**
-> - **git repository:** `https://github.com/8rents/hello-codespaces`
-> - **keywords:** `"GitHub", "codespaces", "vsCode.dev", "Ephemeral Computing"`
-> - **author:** `Brenton Holiday`
-> - **license:** `MIT`
+> *You can completely auto create a `package.json` file with  `npm init` using the `-y` flag, however this will not create all of the options in the json array. ***Any values that are not created when the `package.json` is made will have to have the correct keys looked up later when needed.***
+
+When creating my package file I just hit enter all the way through except for the `entry point` question which I changed from `index.js` to `app.js`.
+
+I also entered my GitHub repo and changed the version number to `0.0.1`.
+
+## Creating a `.devcontainer` file
+
+The `.devcontainer` file contains all of the information needed for the environment of your application. 
+
+Select the `<> Code` dropdown on your GitHub repository page, then `codespaces` then on top where it says "codespaces: your work in the cloud", click the `...` button and select "configure dev container".  
+
+This will create a file in your repo `*your-repo-name*/.devcontainer/.devcontainer.json`.
+
+In search box on the right select what kind of system you will need. I simply searched "node" and selected **"Node.js (via nvm), yarn and pnpm"** from there it provides instructions on editing your `.devcontainer.json` file.
+
+> Copy and paste the following snippet into the features attribute of your devcontainer.json file.
+
+```bash
+"ghcr.io/devcontainers/features/node:1": {}
+```
+
+So your file would look something like:
+
+```
+// Features to add to the dev container.
+// More info: https://containers.dev/features.
+"features": "ghcr.io/devcontainers/features/node:1",
+```
 
 ## Sources
 
