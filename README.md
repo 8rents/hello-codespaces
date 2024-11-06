@@ -34,7 +34,9 @@ We will use GitHub as a file system and vscode.dev as an IDE
 
 In terminal initalize a new node app `package.json` file  by running `npm init` and adjusting any of the settings.
 
-> *You can also auto create the package file and adjust later using `npm init -y`
+> *You can also auto create a `package.json` file using `npm init -y`, however this will not create all of the options in the json array.*
+>
+> *You select the default by hitting enter for each question. *This is better than the `-y` flag because each of the array options will be created for you.**
 
 Here's my entry for `npm init`:
 
