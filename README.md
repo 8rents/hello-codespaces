@@ -4,7 +4,7 @@
 
 ---
 
-## Getting Started
+## Using vscode.dev as an IDE
 
 We will use GitHub as a file system and vscode.dev as an IDE
 
@@ -14,8 +14,46 @@ We will use GitHub as a file system and vscode.dev as an IDE
     - Add a README
     - Add a license
     - Add a Node GitIgnore to the Repo
-2. In Your Browser Open <https://vscode.dev>
+2. In your browser open <https://vscode.dev>
     - Sign in with GitHub and/or Microsoft
     - Open the GitHub Repo you just made
     - Type any additional documentation into the README.md file
     - Commit and push the "initial commit"
+    - When you refresh your github repo in your browser we will see the changes
+
+## Using Codespaces as a development enviornment
+
+1. Open a new terminal window in vscode
+2. Click the "continue working in GitHub Codespaces" button
+3. Authorize Codespaces
+4. Select the type of server you want to spin up
+5. A new window will open with a terminal
+6. Test that node is installed `node -v` prints out `v20.17.0`
+
+### Create a new node app
+
+In terminal initalize a new node app `package.json` file  by running `npm init` and adjusting any of the settings.
+
+> *You can also auto create the package file and adjust later using `npm init -y`
+
+Here's my entry for `npm init`:
+
+> - **name:** `hello-codespaces`
+> - **version:** `0.0.1`
+> - **description:** `An attempt at ephemeral computing by developing purely in the cloud using GitHub codespaces and vscode.dev to make a quick start node.js app`
+> - **entry point:** `app.js`
+> - **test command:**
+> - **git repository:** `https://github.com/8rents/hello-codespaces`
+> - **keywords:** `GitHub, Codespaces, vsCode.dev, Ephemeral Computing`
+> - **author:** `Brenton Holiday`
+> - **license:** `MIT`
+
+## Sources
+
+- [**vscode docs:** Developing with GitHub codespaces](https://code.visualstudio.com/docs/remote/codespaces)
+- [**GitHub docs:** Introduction to dev containers](https://docs.github.com/en/codespaces/setting-up-your-project-for-codespaces/adding-a-dev-container-configuration/introduction-to-dev-containers)
+- [**npm docs:** Configuring a npm package.json file](https://docs.npmjs.com/cli/v10/configuring-npm/package-json)
+
+---
+
+**🤍 2024 [Brenton Holiday](https://8rents.github.io)**
