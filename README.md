@@ -34,11 +34,25 @@ We will use GitHub as a file system and vscode.dev as an IDE
 
 In the codespaces terminal initalize a new node app `package.json` file  by running `npm init` and adjusting any of the settings.
 
-### A couple of notes about `package.json` file creation
-
-You can auto create a `package.json` file using `npm init -y`, however this will not create all of the options in the json array.*
-
-You can select the default by hitting enter for each question.* **This is better than the `-y` flag because each of the array options will be created for you.** You won't have to look up each of the correct key values later.
+> ### *A couple of notes about `package.json` file creation*
+>
+> *You can auto create a `package.json` file using `npm init -y`, however this will not create all of the options in the json array.*
+>
+> *You can select the default by hitting enter for each question.* ***This is better than the `-y` flag because each of the array options will be created for you.*** *You won't have to look up each of the correct key values later.*
+>
+> ---
+>
+> Here's my entry for `npm init`:
+>
+> - **name:** `hello-codespaces`
+> - **version:** `0.0.1`
+> - **description:** `An attempt at ephemeral computing by developing purely in the cloud using GitHub codespaces and vscode.dev to make a quick start node.js app`
+> - **entry point:** `app.js`
+> - **test command:**
+> - **git repository:** `https://github.com/8rents/hello-codespaces`
+> - **keywords:** `"GitHub", "codespaces", "vsCode.dev", "Ephemeral Computing"`
+> - **author:** `Brenton Holiday`
+> - **license:** `MIT`
 
 ## Sources
 
