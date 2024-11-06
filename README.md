@@ -30,13 +30,15 @@ We will use GitHub as a file system and vscode.dev as an IDE
 5. A new window will open with a terminal
 6. Test that node is installed `node -v` prints out `v20.17.0`
 
-### Create a new node app
+## Create a new node app
 
-In terminal initalize a new node app `package.json` file  by running `npm init` and adjusting any of the settings.
+In the codespaces terminal initalize a new node app `package.json` file  by running `npm init` and adjusting any of the settings.
 
-> *You can also auto create a `package.json` file using `npm init -y`, however this will not create all of the options in the json array.*
+> **A couple of notes about `package.json` file creation:** 
 >
-> *You select the default by hitting enter for each question. *This is better than the `-y` flag because each of the array options will be created for you.**
+*You can auto create a `package.json` file using `npm init -y`, however this will not create all of the options in the json array.*
+>
+> *You can select the default by hitting enter for each question. *This is better than the `-y` flag because each of the array options will be created for you.* You won't have to look up each of the correct key values later.*
 
 Here's my entry for `npm init`:
 
@@ -46,7 +48,7 @@ Here's my entry for `npm init`:
 > - **entry point:** `app.js`
 > - **test command:**
 > - **git repository:** `https://github.com/8rents/hello-codespaces`
-> - **keywords:** `GitHub, Codespaces, vsCode.dev, Ephemeral Computing`
+> - **keywords:** `"GitHub", "codespaces", "vsCode.dev", "Ephemeral Computing"`
 > - **author:** `Brenton Holiday`
 > - **license:** `MIT`
 
