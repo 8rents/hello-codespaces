@@ -5,8 +5,10 @@
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
 	"image": "mcr.microsoft.com/devcontainers/javascript-node:1-18-bullseye",
 
-	// Features to add to the dev container. More info: https://containers.dev/features.
-	// "features": "ghcr.io/devcontainers/features/node:1": {}",
+	// Features to add to the dev container. 
+	// More info: https://containers.dev/features.
+	// https://github.com/devcontainers/features/tree/main/src/node
+	"features": "ghcr.io/devcontainers/features/node:1",
 
 	// Configure tool-specific properties.
 	"customizations": {
