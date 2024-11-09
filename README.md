@@ -48,7 +48,7 @@ I also entered my GitHub repo and changed the version number to `0.0.1`.
 
 ## Creating a `.devcontainer` file
 
-The `.devcontainer` file contains all of the information needed for the environment of your application. 
+The `.devcontainer` file contains all of the information needed for the environment of your application.
 
 Select the `<> Code` dropdown on your GitHub repository page, then `codespaces` then on top where it says "codespaces: your work in the cloud", click the `...` button and select "configure dev container".  
 
@@ -64,7 +64,7 @@ In search box on the right select what kind of system you will need. I simply se
 
 So your file would look something like:
 
-```
+```json
 // Features to add to the dev container.
 // More info: https://containers.dev/features.
 "features": "ghcr.io/devcontainers/features/node:1",
