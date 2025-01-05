@@ -23,6 +23,10 @@ We will use GitHub as a file system and vscode.dev as an IDE
 
 ## Using Codespaces as a development enviornment
 
+A codespace is a development environment that’s hosted in the cloud. Codespaces run on a variety of VM-based compute options hosted by GitHub.com, which you can configure from 2 core machines up to 32 core machines. You can connect to your codespaces from the browser or locally using Visual Studio Code.
+
+To make a new codespace:
+
 1. Open a new terminal window in vscode
 2. Click the "continue working in GitHub Codespaces" button
 3. Authorize Codespaces
@@ -47,6 +51,16 @@ When creating my package file I just hit enter all the way through except for th
 I also entered my GitHub repo and changed the version number to `0.0.1`.
 
 ## Creating a `.devcontainer` file
+
+Codespaces uses the devcontainer schema to create containers
+
+### devcontainer.json schemas
+
+- The base schema: schema describing all base properties as documented in the `devcontainer.json` reference.
+- The main schema: references the base schema, plus all schemas containing tool-specific properties.
+
+Here is the actual schema template that I would use to create new devcontainers: https://containers.dev/implementors/json_schema/
+Here is a reference to the json schema: https://containers.dev/implementors/json_reference/
 
 The `.devcontainer` file contains all of the information needed for the environment of your application.
 
